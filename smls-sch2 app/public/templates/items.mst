@@ -1,0 +1,9 @@
+<ul>
+  {{#items}}
+    <li><a href="/items/{{_id}}">{{title}}</a></li>
+  {{/items}}
+
+  {{^items}}
+    <span>No news found</span>
+  {{/items}}
+</ul>

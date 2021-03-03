@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+{{>head}}
+</head>
+
+
+<body>
+<header>
+{{>header}}
+</header>
+<div id = "site-body">
+<div id = "site-body-2">
+<h1>AUTHORISATION</h1>
+<p>Enter login and password in Basic Auth to get access to CRUD requests, and if you are admin, to requests with users </p>
+<h1>RESOURCES</h1>
+<table>
+    <tr> 
+        <th>GET</th>
+        <th>/api/v1/me</th>
+        <td>Get data of your profile(If you are authorised</td>
+    </tr>
+    <tr> 
+        <th>GET</th>
+        <th>/api/v1/users</th>
+        <td>Get data of all users (if you are admin)</td>
+    </tr>
+    <tr> 
+        <th>GET</th>
+        <th>/api/v1/users/:id</th>
+        <td>Get data of user by id (if you are admin or if this is your account)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/users/register</th>
+        <td>Create one new user with login,password,name</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/users/update/:id</th>
+        <td>Update one user by id (if you are admin, change: login,password,name,avaUrl(file),bio,role)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/users/delete/:id</th>
+        <td>Delete user by id (if you are admin or if this is your account)</td>
+    </tr>
+
+    <tr> 
+    <th>GET</th>
+        <th>/api/v1/subjects</th>
+        <td>Get data of all subjects</td>
+    </tr>
+    <tr> 
+    <th>GET</th>
+        <th>/api/v1/subjects/:id</th>
+        <td>Get data of subject by id</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/subjects/create</th>
+        <td>Create one new subject with name (if you are admin)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/subjects/delete/:id</th>
+        <td>Delete subject by id (if you are admin)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/subjects/delete/:id</th>
+        <td>Delete subject by id (if you are admin)</td>
+    </tr>
+
+
+    <tr> 
+    <th>GET</th>
+        <th>/api/v1/marks</th>
+        <td>Get data of all marks with pagination (enter page)</td>
+    </tr>
+    <tr> 
+        <th>GET</th>
+        <th>/api/v1/marks/:id</th>
+        <td>Get data of marks by USER id </td>
+    </tr>
+
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/marks/create</th>
+        <td>Create one new mark with values(per space), userId, subjectId (if you are admin)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/marks/update/:id</th>
+        <td>Update one mark by id (if you are admin, change: values(per space)</td>
+    </tr>
+    <tr> 
+    <th>POST</th>
+        <th>/api/v1/marks/delete/:id</th>
+        <td>Delete mark by id (if you are admin)</td>
+    </tr>
+</table>
+<h1>ERRORS</h1>
+<p> 403 Forbidden - you are not the admin</p>
+<p> 401 Unthorised - you forgot to enter login or password</p>
+<p> 404 Not found - Id in your input is incorrect</p>
+<p> 400 Error - Your input is`t right </p>
+<p> 500 Error - sorry, something with server </p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+ {{>head}}
+</head>
+
+<body>
+<header>
+       {{>header}}
+    </header>
+<div id="site-body">
+   <table>
+       <tbody>
+            <tr>
+                <th>Назва</th>
+                <th>Вчитель</th>
+                <th>Розпочато курс</th>
+            </tr>
+          {{#subjects}}
+          <tr>
+                <td>{{name}}</td>
+                <td>{{teacherId}}</td>
+                <td>{{registeredAt}}</td>
+               {{/subjects}}
+          </tr>
+        </tbody>
+    </table>
+    
+    </p>
+
+   {{>footer}}
+</div>
+</body>
+
+</html>

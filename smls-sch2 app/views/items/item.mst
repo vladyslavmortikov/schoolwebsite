@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+ {{>head}}
+</head>
+
+<body>
+ <header>
+       {{>header}}
+    </header>
+<div id="site-body">
+ <div id="site-body-2">
+    <h1>ТЕСТОВИЙ ПЕРЕГЛЯД НОВИНИ - АДМІНІСТРУВАННЯ</h1>
+    <p><img class="news-main-photo" src={{item.photo}}>
+      <h2>{{item.title}}</h2>
+      <p><b>Date:</b> {{item.postedAt}}</p>
+     {{item.text}}
+    </p>
+    
+   <!-- Кнопка активации -->
+        <label class="btn but" for="modal-1">Delete</label>
+        <!-- Модальное окно -->
+        <div class="modal">
+          <input class="modal-open" id="modal-1" type="checkbox" hidden>
+          <div class="modal-wrap" aria-hidden="true" role="dialog">
+            <label class="modal-overlay" for="modal-1"></label>
+            <div class="modal-dialog">
+              <div class="modal-header">
+                <h2>Delete </h2>
+                <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure ?</p>
+              </div>
+              <div class="modal-footer">
+                <label class="btn btn-primary but" for="modal-1">back</label>
+
+                <form action="/news/{{item.id}}/delete" method="POST" enctype="multipart/form-data">
+                  <br><input class = "but" type="submit" value="delete"><br>
+               </form>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <form action='/news/{{item.id}}/edit' method='GET'>
+      <button id="updateNewsButton" type="submit" value="updateNewsButton">Редагувати</button>
+    </form>
+
+   {{>footer}}
+</div>
+</div>
+</body>
+
+</html>

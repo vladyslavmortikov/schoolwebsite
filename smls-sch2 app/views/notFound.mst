@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+  {{>head}}
+</head>
+
+<body>
+ <header>
+     {{>header}}
+    </header>
+<div id="site-body">
+<div id="site-body-2">
+    <h1>Електронний щоденник - 2020</h1>
+    <h1>Cторінка не знайдена</h1>
+    <h1>ПОМИЛКА 404</h1>
+    
+     {{>footer}}
+    </div>
+     
+  </div>
+
+</body>
+
+</html>

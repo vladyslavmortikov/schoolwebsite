@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+ <header>
+       {{>header}}
+    </header>
+    <div id="site-body">
+      <div id="site-body-2">
+        <h1>НОВИНИ ШКОЛИ - АДМІНІСТРУВАННЯ</h1>
+       
+       <form action='/news/new' method='GET'>
+            <button id="addNewsButton" type="submit" value="addNewsButton">Додати новину</button>
+       </form>
+
+        <form class="search" action="/items" method="get">
+        <input type="text" name="search" value="{{searchword}}">
+        </form>
+
+  <table border = "1" width = 100%>
+                {{#items}}
+                <tr align="center">
+                    <td><a href = "items/{{id}}">{{title}}</a></td>
+                </tr>
+                {{/items}}
+                {{^items}}
+                no items
+                {{/items}}
+            </table>
+
+ <form class="search1" action="/items" method="GET">
+    <div class="input-group">
+                <input type="text" name="search" value="{{searchword}}" placeholder="Search" class="form-control">
+            </div>
+            </div>
+        </form>
+
+<div class="btn-group">
+            <ul class="pagination">
+            {{#left}}
+                <button class="page-item" class="button" onClick='location. href = "/items?page={{prevPage}}&search={{searchStr}}"'> &laquo; Prev</button>
+                {{/left}}
+                <button class="page-item" class="button"> {{pageOnSite}} / {{maxPageOnSite}} </button>
+            {{#right}}
+                <button class="page-item" class="button" onClick='location. href = "/items?page={{nextPage}}&search={{searchStr}}"'>Next &raquo; </button>
+                {{/right}}
+            </ul>
+        </div>
+            <br>
+            <p>Results: {{count}}</p>
+         {{>footer}}
+      </div>
+    </div>
+</body>
+
+</html>

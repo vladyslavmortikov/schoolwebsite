@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+   {{>head}}
+</head>
+
+<body>
+<header>
+       {{>header}}
+    </header>
+  <div id="site-body">
+    <h1>ОЦІНКИ</h1>
+
+<table>
+       <tbody>
+            <tr>
+                <th>Прізвище та ім'я студета</th>
+                <th>Предмет</th>
+                <th>Оцінка</th>
+            </tr>
+           {{#marks}} 
+          <tr>
+                <td>{{userId}}</a></td>
+                <td>{{subjectId}}</a></td>
+                <td><a href="/marks/{{&id}}">{{value}}</a></td>
+                <td>  <!-- Кнопка активации -->
+        <label class="btn but" for="modal-1">Delete</label>
+        <!-- Модальное окно -->
+        <div class="modal">
+          <input class="modal-open" id="modal-1" type="checkbox" hidden>
+          <div class="modal-wrap" aria-hidden="true" role="dialog">
+            <label class="modal-overlay" for="modal-1"></label>
+            <div class="modal-dialog">
+              <div class="modal-header">
+                <h2>Delete </h2>
+                <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure ?</p>
+              </div>
+              <div class="modal-footer">
+                <label class="btn btn-primary but" for="modal-1">back</label>
+
+                <form action="/marks/{{&id}}/delete" method="POST" enctype="multipart/form-data">
+                  <br><input class = "but" type="submit" value="delete"><br>
+               </form>
+                </td>
+                <td><form action='/marks/{{&id}}/edit' method='GET'>
+                    <button type="submit" value="updateButton" id="updateButton">
+                         <img src="/images/edit.png" width="20" height="20" alt="Редагувати оцінку">
+                    </button>
+                    </form>
+              
+                </td>
+                 </td>
+          </tr>
+          {{/marks}}
+        </tbody>
+    </table>
+
+      <form action='/marks/new' method='GET'>
+            <button id="addMarkButton" type="submit" value="addMarkButton">Нова оцінка</button>
+      </form>
+
+      {{>footer}}
+  </div>
+</body>
+
+</html>

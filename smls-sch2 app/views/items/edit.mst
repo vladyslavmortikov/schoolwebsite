@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+ <header>
+       {{>header}}
+    </header>
+  <div id="site-body">
+   <div id="site-body-2">
+        <h1>РЕДАГУВАННЯ НОВИНИ - АДМІНІСТРУВАННЯ</h1>
+    <form action='/news/{{item.id}}/edit' method='POST' enctype="multipart/form-data">
+            <b>Заголовок:</b><input required name="title" value="{{item.title}}"><br>
+            <b>Прев'ю текст: </b><input required name="preview" value="{{item.preview}}"><br>
+            <b>Текст новини:</b><input required name="text" value="{{item.text}}"><br>
+            <b>Фотографія:</b><br>
+            <img class="news-main-photo" src="{{item.photo}}">
+            <input required type="file" name="pic" value={{item.photo}}>
+            <input id="updateNewsButton" type="submit" value="Редагувати новину">
+        </form>
+
+      {{>footer}}
+  </div>
+  </div>
+</body>
+
+</html>

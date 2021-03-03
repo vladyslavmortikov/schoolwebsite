@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+  {{>head}}
+</head>
+
+<body>
+<header>
+    {{>header}}
+</header>
+<div id="site-body">
+<div id="site-body-2">
+<p><img class = "user-photo" src="{{previewUser.avaUrl}}"></p>
+<h2><b>Детальна інформація про користувача</b></h2>
+<h2><b>{{previewUser.name}}</b></h2>
+<p><b>Логін:</b> {{previewUser.login}}</p> 
+<p><b>Дата реєстрації:</b> {{previewUser.registeredAt}}</p>
+<p><b>Статус:</b> {{previewUser.role}}</p>
+
+<script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-login="sch2hp_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
+
+</p>
+
+  {{>footer}}
+</div>
+</div>
+</body>
+
+</html>

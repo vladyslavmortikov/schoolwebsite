@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+ {{>head}}
+</head>
+
+<body>
+<header>
+       {{>header}}
+    </header>
+  <div id="site-body">
+
+    <form action='/marks/{{mark.id}}/edit' method='POST' enctype="multipart/form-data">
+        <h2>Редагування оцінки учневі {{mark.userId}}</h2>
+        <h3>від {{mark.date}}</h3> 
+        <b>Предмет: </b> {{mark.subjectId}} <br>
+        <b>Оцінка:</b><input type="number" name="value" min="1" max="12" value="{{mark.value}}"><br>
+        <b>Тема:</b><input required type="text" name="description" value="{{mark.description}}"><br>
+        <input id="updateMarkButton" type="submit" value="Редагувати оцінку">
+        </form>
+        
+      {{>footer}}
+  </div>
+</body>
+
+</html>

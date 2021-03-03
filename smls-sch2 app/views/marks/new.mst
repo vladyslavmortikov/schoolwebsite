@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+<header>
+       {{>header}}
+    </header>
+  <div id="site-body">
+    <form action='/marks/new' method='POST' enctype="multipart/form-data">
+            <b>Ідентифікатор учня: </b><br><input type="text" name="userId"><br>
+            <b>Предмет: </b><br><input type="text" name="subjectId"><br>
+            <b>Оцінка: </b><br><input type="number" name="value" min="1" max="12"><br>
+            <b>Тема уроку: </b><br><input type="text" name="description"><br>
+
+            <input id="addMarkButton" type="submit" value="Додати оцінку">
+        </form>
+      {{>footer}}
+  </div>
+</body>
+
+</html>

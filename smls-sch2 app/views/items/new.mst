@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+  <header>
+       {{>header}}
+    </header>
+  <div id="site-body">
+     <div id="site-body-2">
+        <h1>ДОДАВАННЯ НОВИН - АДМІНІСТРУВАННЯ</h1>
+
+    <form action='/news/new' method='POST' enctype="multipart/form-data">
+            <b>Заголовок: </b><br><textarea required rows="1" cols="80" name="title"></textarea><br>
+            <b>Прев'ю текст: </b><br><textarea required rows="2" cols="80" name="preview"></textarea><br>
+            <b>Текст новини: </b><br><textarea required rows="10" cols="80" name="text"></textarea><br>
+            Фотографія: <input required type="file" name="pic">
+
+
+            <input id="addNewsButton" type="submit" value="Додати новину">
+        </form>
+        
+      {{>footer}}
+  </div>
+  </div>
+</body>
+
+</html>
