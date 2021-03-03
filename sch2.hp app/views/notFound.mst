@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Школа №2 міста Горішні Плавні: Офіційний сайт - sch2hp.at.ua</title>
+  {{>head}}
+</head>
+
+<body>
+
+  <header class="header_area white-header">
+    {{>header}}
+  </header>
+
+  <!--================ Start Home Banner Area =================-->
+
+<section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>Сторінка не знайдена:(</h2>
+                <h3>Спробуйте ще раз!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <footer class="footer-area section_gap">
+    {{>footer}}
+  </footer>
+
+</body>
+
+</html>

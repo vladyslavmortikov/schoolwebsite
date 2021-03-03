@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+  <div id="site-body">
+    <header>
+       {{>header}}
+    </header>
+    <h1 class="header-text">ДОВІДНИК ДЛЯ БАТЬКІВ</h1>
+    <p>Сайт у розробці. Скоро ми покажемо всі можливості!</p>
+
+      {{>footer}}
+  </div>
+</body>
+
+</html>

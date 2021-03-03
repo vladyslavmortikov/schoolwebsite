@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Про Школу - Офіційний сайт sch2hp.at.ua</title>
+   {{>head}}
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area white-header">
+     {{>header}}
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>НАШІ ЦІННОСТІ</h2>
+                <div class="page_link">
+                  <a href="/">Головна</a>
+                  <a href="/philosophy">Про Школу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_area section_gap">
+      <div class="container">
+        <div class="row h_blog_item">
+          <div class="col-lg-6">
+            <div class="h_blog_img">
+              <img class="img-fluid" src="images/about.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h_blog_text">
+              <div class="h_blog_text_inner left right">
+                <h4>МІСІЯ</h4>
+                <p>Новопечерська школа пропонує своїм учням освітній досвід, який максимально розкриває їхній навчальний потенціал. 
+                Вони прямуватимуть шляхом, на якому стануть незалежними учнями з широким кругозором, будуть критично мислити та з 
+                легкістю вирішувати проблеми, а також віддано розвиватимуть свої таланти. Саме так вони будуть створювати кращу версію 
+                як самих себе, так і суспільства. Для цього ми забезпечуємо довірливе, турботливе і співчутливе середовище, 
+                де учні можуть розвинути морально-етичні духовні якості та вміння розуміти інших.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row h_blog_item">
+          <div class="col-lg-6">
+            <div class="h_blog_img">
+              <img class="img-fluid" src="images/about.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h_blog_text">
+              <div class="h_blog_text_inner left right">
+                <h4>ВІЗІЯ</h4>
+                <p>Новопечерська школа пропонує своїм учням освітній досвід, який максимально розкриває їхній навчальний потенціал. 
+                Вони прямуватимуть шляхом, на якому стануть незалежними учнями з широким кругозором, будуть критично мислити та з 
+                легкістю вирішувати проблеми, а також віддано розвиватимуть свої таланти. Саме так вони будуть створювати кращу версію 
+                як самих себе, так і суспільства. Для цього ми забезпечуємо довірливе, турботливе і співчутливе середовище, 
+                де учні можуть розвинути морально-етичні духовні якості та вміння розуміти інших.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row h_blog_item">
+          <div class="col-lg-6">
+            <div class="h_blog_img">
+              <img class="img-fluid" src="images/about.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h_blog_text">
+              <div class="h_blog_text_inner left right">
+                <h4>ЦІННОСТІ</h4>
+                <p>Новопечерська школа пропонує своїм учням освітній досвід, який максимально розкриває їхній навчальний потенціал. 
+                Вони прямуватимуть шляхом, на якому стануть незалежними учнями з широким кругозором, будуть критично мислити та з 
+                легкістю вирішувати проблеми, а також віддано розвиватимуть свої таланти. Саме так вони будуть створювати кращу версію 
+                як самих себе, так і суспільства. Для цього ми забезпечуємо довірливе, турботливе і співчутливе середовище, 
+                де учні можуть розвинути морально-етичні духовні якості та вміння розуміти інших.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <footer class="footer-area section_gap">
+      {{>footer}}
+    </footer>
+  </body>
+</html>

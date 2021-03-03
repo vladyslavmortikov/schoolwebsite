@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Школа №2 міста Горішні Плавні: Офіційний сайт - sch2hp.at.ua</title>
+  {{>head}}
+</head>
+
+<body>
+
+  <header class="header_area">
+    {{>header}}
+  </header>
+
+  <!--================ Start Home Banner Area =================-->
+  <section class="home_banner_area">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content text-center">
+              <p class="text-uppercase">
+                Вітаємо вас на сайті
+              </p>
+              <h2 class="text-uppercase mt-4 mb-5">
+                Школи №2<br>
+                міста Горішні Плавні
+              </h2>
+              <div>
+                <a href="/philosophy" class="primary-btn ml-sm-3 ml-0">Про Школу</a>
+                <a href="/news" class="primary-btn ml-sm-3 ml-0">Новини Школи</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Ми - #Школа</h2>
+            <p>
+              6 фактів про нашу школу!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/happy.jpg"></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Щасливих</h4>
+              <p>
+                Ми #ШколаЩасливихЛюдей, тому що учні й вчителі отримують задоволення від роботи!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/medal.jpg"></span></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Успішних</h4>
+              <p>
+                За 50 років школу закінчили тисячі учнів, які досягли значних життєвих успіхів!
+              </p>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/cleve.jpeg"></span></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Розумних</h4>
+              <p>
+               Щороку школа посідає гарні позиції серед рейтингу складання ЗНО з фізики і хімії, предметів ІТ спрямування.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/rsh.jpg"></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Креативних</h4>
+              <p>
+               Рада Школярів щороку проводить сотні заходів, які подобаються всім!
+               Запрошуємо і Вас!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/biolo.jpg"></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Сміливих</h4>
+              <p>
+               Ми не боїмося говорити, саме тому беремо участь у грантових проектах і перемагаємо!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><img id="photo-index" src="/images/sport.jpg"></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">#Сильних</h4>
+              <p>
+              Пишаємося нашими спорстменами, які щороку досягають значних успіхів на різних рівнях!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area section_gap">
+    {{>footer}}
+  </footer>
+
+</body>
+
+</html>

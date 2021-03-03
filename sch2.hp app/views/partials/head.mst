@@ -1,0 +1,10 @@
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+  <link rel="stylesheet" href="/stylesheets/flaticon.css" />
+  <link rel="stylesheet" href="/stylesheets/themify-icons.css" />
+  <link rel="stylesheet" href="/stylesheets/vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/stylesheets/vendors/nice-select/css/nice-select.css"/>

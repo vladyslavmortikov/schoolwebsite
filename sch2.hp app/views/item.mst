@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Новини Школи | sch2hp.at.ua </title>
+   {{>head}}
+  </head>
+
+  <body>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+      {{>header}}
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+  <section class="blog_area single-post-area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="single-post row">
+                        <div class="col-lg-12">
+                            <div class="feature-img">
+                                <img class="news-image" src="{{photo}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+         <div class="col-lg-9 col-md-9 blog_details">
+                            <h2>{{title}}</h2>
+                            <p class="excert">
+                                {{postedAt}}
+                            </p>
+                            <p class="excert">
+                                {{text}}
+                            </p>
+                        </div>
+    </section>
+    <!--================Blog Area =================-->
+
+    <!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+         {{>footer}}
+          </footer>
+          <!--================ End footer Area  =================-->
+        </body>
+      </html>

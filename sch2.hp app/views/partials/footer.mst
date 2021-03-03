@@ -1,0 +1,52 @@
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Про нашу Школу</h4>
+            <ul>
+              <li><a href="/philosophy">Місія</a></li>
+              <li><a href="/philosophy">Візія</a></li>
+              <li><a href="/philosophy">Цінності</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Новини Школи</h4>
+            <ul>
+              <li><a href="/news">Головні новини</a></li>
+              <li><a href="/news">Класні новини</a></li>
+              <li><a href="/news">Новини вчителів</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Електронний щоденник</h4>
+            <ul>
+              <li><a href="#">Вхід для учнів</a></li>
+              <li><a href="#">Вхід для батьків</a></li>
+              <li><a href="#">Вхід для вчителів</a></li>
+            </ul>
+          </div>
+          </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+      
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Усі права збережено | Загальноосвітня Школа І-ІІІ ступенів №2 Горішньоплавнівської міської ради Полтавської області | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+           <a href="https://www.facebook.com/sch2hp/"><i class="ti-facebook"></i></a>
+                                <a href="https://www.instagram.com/sch2.hp/"><i class="ti-instagram"></i></a>
+                                <a href="https://t.me/sch2hp"><i class="ti-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+
+  <script src="/javascripts/jquery-3.2.1.min.js"></script>
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="/javascripts/vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="/javascripts/owl-carousel-thumb.min.js"></script>
+  <script src="/javascripts/jquery.ajaxchimp.min.js"></script>
+  <script src="/javascripts/mail-script.js"></script> }}
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="/javascripts/gmaps.min.js"></script>
+  <script src="/javascripts/theme.js"></script>
